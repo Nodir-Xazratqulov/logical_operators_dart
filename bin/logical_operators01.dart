@@ -10,4 +10,54 @@ Given three integers a, b, c,  check the following statement "The number b is be
         bool: answer
 */
 
-void main() {}
+// func(int a, int b, int c){
+//   if (a>b) {
+//     if (a<c) {
+//       return 'a soni b va c sonlarini o`rtasida';
+//     }
+//   }
+//   if (a<b) {
+//     if (a>c) {
+//       return 'a soni b va c sonlarini o`rtasida';
+//     }
+//   }
+
+
+//   if (b>a) {
+//     if (b<c) {
+//       return 'b soni a va c sonlarini o`rtasida';
+//     }
+//   }
+//   if (b<a) {
+//     if (b>c) {
+//       return 'b soni a va c sonlarini o`rtasida';
+//     }
+//   }
+
+
+//   if (c>a) {
+//     if (c<b) {
+//       return 'c soni a va b sonlarini o`rtasida';
+//     }
+//   }
+//   if (c<a) {
+//     if (c>b) {
+//       return 'c soni a va b sonlarini o`rtasida';
+//     }
+//   }
+// }
+// void main() {
+//   print(func(7, 3, 5));
+// }
+
+
+
+bool func(int a, int b, int c){
+  if(a<b && b<c){
+    return true;
+  }
+  return false;
+} 
+void main() {
+  print(func(2,3,6));
+}
