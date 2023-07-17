@@ -8,4 +8,15 @@ Given a two-digit integer a,  check the following statement "All digits sum is e
         bool: answer
 */
 
-void main() {}
+
+bool func(int n){
+  int a = n%10;
+  int b = n~/10;
+  if((a+b)%2==0){
+    return true;
+  }
+  return false;
+}
+void main() {
+  print(func(55));
+}
