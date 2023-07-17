@@ -8,4 +8,15 @@ Given integer a,  check the following statement "The integer is a five-digit num
         bool: answer
 */
 
-void main() {}
+
+
+
+bool func(int n){
+  if(n/10>=1000){
+    return true;
+  }
+  return false;
+}
+void main() {
+  print(func(12945));
+}
